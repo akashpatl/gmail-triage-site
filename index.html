@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>gmail-triage</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>gmail-triage</h1>
+  <p class="sub">A personal command-line tool for sorting Gmail.</p>
+
+  <p>gmail-triage runs on its owner's own computer. It reads unread messages in
+  the owner's Gmail accounts, asks Anthropic's Claude model which category each
+  one belongs to, then applies a Gmail label and archives low-priority mail.</p>
+
+  <p>It is used by one person on their own mailboxes. It is not offered to the
+  public and there is nothing to sign up for.</p>
+
+  <h2>Google permissions</h2>
+  <ul>
+    <li><code>gmail.readonly</code> to read unread messages for classification.</li>
+    <li><code>gmail.modify</code> to add labels, archive and mark messages read.</li>
+  </ul>
+  <p>The tool never asks for permission to send mail and has no way to send it.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a> ·
+    Contact: <a href="mailto:akash@patl.xyz">akash@patl.xyz</a>
+  </footer>
+</main>
+</body>
+</html>

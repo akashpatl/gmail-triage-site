@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>gmail-triage privacy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="sub">gmail-triage · last updated 18 November 2026</p>
+
+  <p>gmail-triage is a personal tool used by its owner on their own Gmail
+  accounts. This page describes what it does with Google user data.</p>
+
+  <h2>Data accessed</h2>
+  <p>With the <code>gmail.readonly</code> and <code>gmail.modify</code> scopes,
+  the tool reads the sender, subject and body of unread messages from the last
+  few weeks. It uses <code>gmail.modify</code> only to add labels, archive
+  messages and mark them read.</p>
+
+  <h2>How the data is used</h2>
+  <p>Message content is sent over TLS to Anthropic's API, which returns a
+  category for each message. Anthropic's commercial terms apply to that API,
+  and Anthropic does not train models on that data. No other service
+  receives Gmail data.</p>
+
+  <h2>Storage</h2>
+  <p>OAuth tokens, classification results and settings are kept in local files
+  on the owner's computer. Nothing is stored on a server run by this project.</p>
+
+  <h2>Sharing</h2>
+  <p>Gmail data is not sold, not used for advertising and not shared with
+  anyone except as described above. The use of information received from Google
+  APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google
+  API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Revoking access</h2>
+  <p>Access can be removed at any time from
+  <a href="https://myaccount.google.com/permissions">your Google Account
+  permissions page</a>. Deleting the tool's local config folder removes all
+  stored data.</p>
+
+  <footer>
+    <a href="index.html">Home</a> ·
+    Contact: <a href="mailto:akash@patl.xyz">akash@patl.xyz</a>
+  </footer>
+</main>
+</body>
+</html>
